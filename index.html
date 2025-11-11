@@ -3,33 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Crematory</title>
-  <meta name="description" content="Search memorial keepsakes, urns, scattering kits, and services.">
+  <title>Crematory.ai</title>
+  <meta name="description" content="Search memorial keepsakes, urns, scattering kits, and services." />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>html,body{min-height:100%;background:#fafafa;color:#111}</style>
 </head>
+
 <body>
   <div id="root"></div>
 
-  <!-- React + Babel (so your JSX runs without a build step) -->
+  <!-- React + Babel -->
   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-  <!-- Your component goes here -->
+  <!-- Load your Crematory component -->
+  <script type="text/babel" src="crematory-ai.jsx"></script>
+
+  <!-- Mount -->
   <script type="text/babel">
-    // Paste the full contents of crematory-ai.jsx here, exactly.
-    // Ensure it exports a default component, e.g.:
-    // export default function CrematoryAI() { ... }
-    // If your file currently starts with: import React, { ... } from "react";
-    // remove that import line in this block (React is already loaded globally).
-
-    /* BEGIN PASTE */
-    // export default function CrematoryAI() { ... }  <-- paste your whole component here
-    /* END PASTE */
-
     const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(React.createElement(CrematoryAI));
+    root.render(<CrematoryAI />);
   </script>
 </body>
 </html>
